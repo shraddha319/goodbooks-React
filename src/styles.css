@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+:root {
+  --theme-color: #553b08;
+  --bg-color: #f4f1ea;
+  --dark-gray: #9ca3af;
+  --content-color: #00635d;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body #root {
+  height: inherit;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.center-container {
+  width: 1450px;
+  margin: 0 auto;
+}
+
+nav {
+  color: var(--theme-color);
+  background-color: var(--bg-color);
+  margin-bottom: auto;
+}
+
+.nav-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#brand {
+  font-weight: normal;
+  font-family: "Open Sans", sans-serif;
+  color: var(--theme);
+  font-size: 2.5rem;
+  margin: 0.5rem;
+}
+
+.nav-items {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.search-bar input[type="text"] {
+  flex: 2;
+  display: inline;
+  width: 450px;
+  height: 40px;
+  padding: 0.1rem;
+  margin: 1rem;
+  margin-right: 0;
+  border: 1px var(--theme-color) solid;
+  border-right: hidden;
+  font-size: 1rem;
+}
+
+.nav-container .search-bar button[type="submit"] {
+  height: 47px;
+  width: 50px;
+  margin-left: 0;
+  display: inline;
+  font-size: 1rem;
+  color: var(--theme-color);
+  background-color: white;
+  border: 1px var(--theme-color) solid;
+  border-left: hidden;
+  margin-right: 0.4rem;
+}
+
+.nav-sign-in {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.nav-items div,
+.genre-item {
+  padding: 0.5rem;
+  font-size: 1.4rem;
+  margin: 0.1rem;
+}
+
+.nav-items div:hover,
+.genre-item:hover,
+.genre-item:focus {
+  color: white;
+  background-color: var(--theme-color);
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.genre-heading {
+  color: var(--content-color);
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.genre-list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 1rem;
+}
+
+.genre-item {
+  border: 1px var(--bg-color) solid;
+  border-radius: 0.5rem;
+  color: var(--content-color);
+  background-color: var(--bg-color);
+  font-size: 1.2rem;
+  margin: 0 0.5rem;
+}
+
+hr {
+  color: var(--dark-gray);
+}
+
+.genre-books {
+  margin-top: 3rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.book-item {
+  flex: 0 auto;
+}
+
+.zoom {
+  padding: 2rem;
+  transition: transform 0.2s; /* Animation */
+  width: 220px;
+  height: 300px;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.book-item p {
+  position: relative;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--content-color);
+  font-size: 1.2rem;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: var(--bg-color);
+  padding: 1rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  justify-content: space-evenly;
+}
+
+footer .company,
+.work-with-us,
+.mobile-app {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer .connect {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--theme-color);
+}
+
+footer h2 {
+  color: var(--dark-gray);
+  margin: 0.5rem;
+  margin-left: 0.1rem;
+}
+
+footer .connect i {
+  color: var(--dark-gray);
+  font-size: 2rem;
+  padding: 0.4rem;
+}
