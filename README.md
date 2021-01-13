@@ -6,4 +6,4 @@ A simple, front-end book recommendation application built using react.js, based 
 - CSS3
 - React.js
 
-[codesandbox link](https://codesandbox.io/s/goodbooks-react-658qn)
+> [codesandbox link](https://codesandbox.io/s/goodbooks-react-658qn)
